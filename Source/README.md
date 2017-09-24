@@ -1,0 +1,1 @@
+The clean up includes finding out where there are outliers or missing values, deciding  how  you  will  treat  them,  making  sure  values  you  think  are numerical are being treated as such (correct R class), etc.
