@@ -1,0 +1,9 @@
+The purpose of this project is to analyze Rolling Sales data for Brooklyn to examine relationship between total square feet and sales price for 1, 2, and 3 family homes.
+
+Codes that was used to generate the plot.
+> bk$gross.sqft <- as.numeric(as.character(bk$gross.square.feet))
+> bk$land.sqft <-  as.numeric(as.character(bk$land.square.feet))
+> bk$year.built <- as.numeric(as.character(bk$year.built))
+> plot(log10(bk.homes$gross.sqft),log10(bk.homes$sale.price.n))
+> bk.homes <- bk.homes[which(bk.homes$outliers==0),]
+> plot(log10(bk.homes$gross.sqft),log10(bk.homes$sale.price.n))
